@@ -11,6 +11,7 @@ Confirm:
 - Required assets exist.
 - Text is readable.
 - No obvious overlap, clipping, broken images, or missing values.
+- No low-contrast dark-on-dark text, invisible tables, faded proof objects, or unreadable source pages.
 - Sources exist for factual claims.
 - Final format matches the user's need.
 - For default ambiguous requests, final format is HTML/web deck unless the user explicitly chose PPTX.
@@ -22,12 +23,14 @@ Default final response should include only the final artifact and concise QA sum
 Reject or revise when:
 
 - Titles are topics rather than claims.
+- Claim titles are accurate but bland: generic, bureaucratic, overlong, or not memorable.
 - Slides do not support the thesis.
 - A proof object does not prove the title.
 - The same generic slide could be used after swapping the noun.
 - Body copy fills space instead of advancing the argument.
 - The ending repeats the opening without adding consequence or action.
 - Chinese copy feels generic, bureaucratic, or AI-neutral when a sharper spoken voice would fit.
+- Point-making text lacks charm: not sharp, concise, elegant, or specific enough to survive as a standalone line.
 
 ## Visual Gate
 
@@ -35,10 +38,13 @@ Reject or revise when:
 
 - Contact sheet looks like a template pack.
 - Web deck ignores mature open-source layout lessons: no stable canvas, weak navigation, repeated layouts, missing asset checks, or no presenter rhythm.
+- Web deck lacks a dominant visual/proof object and relies on decorative grids, rings, ghost words, or generic panels.
+- Contact sheet is missing, incomplete, or only shows one representative slide for a multi-slide deck.
 - Three consecutive slides share the same layout.
 - Card grids dominate.
 - Containers are louder than content.
 - Typography feels default or inconsistent.
+- Chinese font choice feels arbitrary, theme-mismatched, or like a casual system fallback.
 - Color palette is one-note.
 - Image crops are low quality, stock-like, or misleading.
 - Charts require legends when direct labels would be clearer.
@@ -54,6 +60,7 @@ Reject or revise when:
 - Brand assets are fabricated or unprovenanced.
 - Generated images carry readable text, logos, or pseudo-official marks.
 - Per-slide image sets lack a consistent art direction or fail to match the slide claims.
+- Slides marked as no-image lack a strong proof object or typographic poster composition.
 
 ## Scorecard
 

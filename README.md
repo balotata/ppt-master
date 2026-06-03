@@ -26,6 +26,7 @@ ppt-master/
     design-quality.md
     pptx-workflow.md
     web-deck-spec.md
+    web-aesthetic-playbook.md
     web-layout-inspiration.md
     research-and-assets.md
     qa-rubric.md
@@ -102,4 +103,5 @@ The skill is meant to reject generic slide output. A finished deck should have:
 - Real or verified brand assets.
 - Editable PPTX output when PPTX is requested.
 - DOM-based text/data and keyboard navigation when HTML is requested.
+- A dominant visual or proof object on most web slides, not decorative grids or report panels.
 - GitHub/open-source web presentation lessons applied when making substantial web decks.

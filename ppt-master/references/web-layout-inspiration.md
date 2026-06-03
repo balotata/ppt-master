@@ -6,6 +6,8 @@ Use this file before substantial HTML/web keynote deck work. The goal is not to 
 
 Default output remains a custom HTML/web deck with local assets, because this gives the strongest visual ceiling and easiest per-slide image composition. Use frameworks only when the user asks or when their runtime advantage clearly matters.
 
+Open-source frameworks should improve mechanics, not flatten taste. Do not let framework-like grids, generic dark dashboards, or developer demo layouts replace the deck's own visual direction.
+
 When the user asks for "GitHub 最优方案", "参考开源排版", "更像成熟 web deck", or a high-stakes web keynote, browse GitHub/docs for current examples before finalizing the design direction.
 
 ## Reference Projects To Know

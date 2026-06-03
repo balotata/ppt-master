@@ -19,6 +19,8 @@ Define before production:
 
 Default priority is visual impact and keynote-like presence, adjusted to the theme. Do not impose one fixed house style; derive the visual language from topic, audience, and requested tone.
 
+For HTML/web decks, read `web-aesthetic-playbook.md` before locking the visual system.
+
 ## Contact Sheet Standard
 
 At thumbnail size, the deck should show authorship:
@@ -48,11 +50,31 @@ Mix layout families based on story needs:
 ## Typography
 
 - Reserve hero-scale type for true thesis, section, or closing moments.
+- Choose Chinese typography to match the theme before writing CSS. Do not casually default to Microsoft YaHei / PingFang / system UI unless the theme calls for neutral UI.
 - Use smaller, tighter headings inside panels, dashboards, and dense slides.
 - Do not scale font size purely with viewport width.
 - Avoid negative letter spacing.
 - Ensure labels and values remain readable at presentation size.
 - Keep footnotes quiet but legible.
+
+## Chinese Typography Direction
+
+Pick a deliberate Chinese font direction for each deck, then define a legal fallback stack.
+
+- Editorial / research / cultural topics: prefer Songti or serif-led direction, e.g. `Noto Serif SC`, `Source Han Serif SC`, `Songti SC`, `SimSun`, paired with a restrained sans for labels.
+- Technology / AI / product / systems: prefer modern geometric sans, e.g. `HarmonyOS Sans SC`, `MiSans`, `OPPO Sans`, `Source Han Sans SC`, `Noto Sans SC`, with tight label hierarchy.
+- Luxury / art / keynote / philosophy: consider high-contrast serif or elegant display direction, e.g. `Noto Serif SC`, `Source Han Serif SC`, `Songti SC`, with generous spacing and fewer words.
+- Gaming / dark cinematic / cyber themes: use a strong display face if available, then fall back to bold serif/sans pairings; avoid pretending an unavailable game font exists.
+- Internet critique / roast / sharp commentary: use heavy sans or condensed-feeling sans where available; pair with blunt large type and minimal body copy.
+- Government / safety / incident briefings: use authoritative, sober typography; avoid playful or luxury fonts.
+
+Rules:
+
+- Name the intended type personality in the design system.
+- Put the most theme-specific font first, then broad CJK fallbacks.
+- If a named font may not exist locally, include robust fallbacks and do not rely on it for layout fitting.
+- Do not mix many Chinese typefaces. Usually one display family plus one label/body family is enough.
+- Test long Chinese titles for wrapping and visual weight.
 
 ## Visual Restraint
 
@@ -61,6 +83,7 @@ Avoid:
 - Card grids as default scaffolding.
 - Cards inside cards.
 - Decorative boxes around prose.
+- Decorative rings, orbs, faint grids, oversized ghost words, or abstract line systems used as the main visual idea.
 - Generic icons that do not encode meaning.
 - One-note palettes dominated by a single hue.
 - Purple/blue gradients, beige slabs, dark slate dashboards, or espresso/brown palettes unless deliberately justified.

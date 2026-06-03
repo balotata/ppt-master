@@ -27,10 +27,10 @@ Use these defaults unless the user says otherwise:
 
 1. Route the task before creating anything. Read `references/task-router.md` when the output format, source material, or task mode is unclear.
 2. Calibrate only decisions that change the deck: audience, objective, output format, source fidelity, language, research depth, visual direction, deadline, and editability.
-3. Prefer web-native HTML decks by default, especially for immersive keynote pages, browser-first sharing, per-slide imagegen, high-aesthetic redesign, and visual storytelling. Read `references/web-deck-spec.md` and, for substantial web decks, `references/web-layout-inspiration.md`.
+3. Prefer web-native HTML decks by default, especially for immersive keynote pages, browser-first sharing, per-slide imagegen, high-aesthetic redesign, and visual storytelling. Read `references/web-deck-spec.md`, `references/web-aesthetic-playbook.md`, and, for substantial web decks, `references/web-layout-inspiration.md`.
 4. Use editable PPTX for explicit PowerPoint delivery, template-following, corporate editability, board/investor workflows, and files the user must revise. Use the available Presentations capability for serious PPTX creation/editing when it is available. Read `references/pptx-workflow.md` before PPTX work.
 5. Build the story before the slides. For substantial decks, create or mentally lock a claim spine: thesis, audience, arc, slide claims, proof objects, sources, and omissions. Read `references/narrative-system.md`.
-6. Lock the design system before production: layout rhythm, typography, palette, chart grammar, imagery, source/footer grammar, and banned motifs. Read `references/design-quality.md`.
+6. Lock the design system before production: layout rhythm, theme-matched Chinese typography, palette, chart grammar, imagery, source/footer grammar, and banned motifs. Read `references/design-quality.md`.
 7. Research modern, factual, financial, legal, medical, product, model, schedule, market, or news claims before using them. Read `references/research-and-assets.md`.
 8. Use imagegen deliberately. For visual/keynote decks, plan per-slide image prompts and generate one image per slide when useful; for analytical decks, generate only hero, chapter, or metaphor images. Never put core readable text, data, logos, watermarks, or pseudo-official brand marks inside generated images.
 9. Verify with a quality gate, not just file existence. Read `references/qa-rubric.md` before final delivery for substantial work.
@@ -56,6 +56,8 @@ If multiple modes apply, choose the highest-risk mode as primary and carry the o
 - The deck must fail the noun-swap test: replacing the company/topic name should break the slide.
 - The contact sheet must show rhythm: varied macro-layouts, chapter movement, and no template-pack monotony.
 - Visual polish must serve the argument: no filler cards, decorative boxes, generic icons, low-resolution crops, or single-hue haze.
+- Web decks must have a dominant visual or dominant proof object on most slides. Decorative rings, pale grids, faint background words, and dashboard panels are not substitutes for composition.
+- Every slide's point-making text must be memorable: sharp, concise, elegant, and specific. A true claim title should feel quotable without becoming gimmicky.
 - Data must be exact enough to trust; never invent metrics to make a chart prettier.
 - Brand assets must be real, user-provided, or verified. Do not fabricate logos, mascots, product UI, partner badges, or app icons.
 - If output is PPTX, preserve editability wherever practical: native text, shapes, tables, chart-like constructs, and editable diagrams over flattened screenshots.
@@ -82,6 +84,7 @@ Load only the relevant files:
 - `references/design-quality.md`: design system, visual rhythm, layout families, typography, and anti-patterns.
 - `references/pptx-workflow.md`: editable PowerPoint/PPTX workflow and Presentations handoff.
 - `references/web-deck-spec.md`: HTML/web-native presentation structure and validation.
+- `references/web-aesthetic-playbook.md`: recovered high-impact web deck visual rules and anti-regression checks.
 - `references/web-layout-inspiration.md`: GitHub/open-source web presentation layout patterns and when to borrow them.
 - `references/research-and-assets.md`: source handling, data integrity, image generation, and brand assets.
 - `references/qa-rubric.md`: final scoring, contact-sheet review, and blocking defects.

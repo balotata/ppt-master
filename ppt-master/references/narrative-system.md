@@ -65,6 +65,33 @@ Use these as building blocks, not rigid templates:
 - Bilingual decks should be meaning-matched, not word-for-word translated.
 - Let philosophical tone come from rhythm and precision, not terminology.
 
+## Claim Title Craft
+
+Every slide needs a point-making title or thesis line with charm. It should be sharp, concise, elegant, and specific enough that the audience remembers it after the slide changes.
+
+Good claim titles:
+
+- Say the conclusion, not the category.
+- Carry tension: before/after, myth/reality, cost/benefit, surface/mechanism, promise/debt.
+- Use concrete nouns and active verbs.
+- Avoid bureaucratic labels, abstract summaries, and safe AI neutrality.
+- Stay short enough to read at a glance.
+- Feel spoken, not slogan-stuffed.
+
+Weak: `AI 与多模态表型`  
+Stronger: `睡眠图谱，开始有了通用底座。`
+
+Weak: `动态睡眠暴露`  
+Stronger: `平均时长骗过了我们，轨迹不会。`
+
+Weak: `证据成熟度矩阵`  
+Stronger: `先别急着兴奋，证据成熟度不在同一层。`
+
+Weak: `后续关注`  
+Stronger: `真正要等的，不是通报，是责任链。`
+
+Before building, rewrite slide titles until they pass the "read-alone test": if the audience saw only the title and visual, they would still understand the slide's argument.
+
 ## Speaker Notes
 
 Use speaker notes when the deck is for live delivery, executive persuasion, teaching, or complex analysis.
@@ -84,7 +111,7 @@ For heavy, long, research-backed, or image-heavy decks, provide a Markdown outli
 - Claim title
 - Core proof object
 - Visual direction
-- Image need: none / hero / per-slide custom image / real source image
+- Image/visual need: none / hero / per-slide custom image / real source image / proof-object dominant
 - Speaker note intent
 - Source requirement or uncertainty
 
