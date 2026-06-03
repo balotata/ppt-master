@@ -21,6 +21,7 @@ When the user asks for "GitHub 最优方案", "参考开源排版", "更像成�
 ## Layout Patterns To Borrow
 
 - Fixed canvas discipline: design for a stable 16:9 frame first, then adapt responsively.
+- Viewport fit: a fixed 16:9 design canvas is allowed as an internal coordinate system, but the delivered deck must scale down/up to fit the visible browser viewport without scroll or cropping.
 - Autoflow mindset: choose layout from content shape, not from a static template list.
 - Anti-monotony: do not repeat the same macro-layout three times in a row.
 - Presenter-first controls: keyboard navigation, page markers, optional notes, and strong first-screen framing.

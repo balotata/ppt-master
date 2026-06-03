@@ -6,6 +6,8 @@ Use this file before building or rewriting substantial HTML/web keynote decks. I
 
 A web deck should feel like a designed presentation artifact, not a styled report page or framework demo.
 
+It must also behave like a presentation: one full slide fits the screen. If the viewer has to scroll to see the bottom of a slide, the deck fails before aesthetics are considered.
+
 Most slides need one of:
 
 - A full-bleed or dominant generated/real image.
@@ -82,6 +84,7 @@ For decks under 8 pages, still vary rhythm: no more than two consecutive slides 
 
 After building, inspect a contact sheet containing every slide. The deck fails if:
 
+- Any slide is clipped, scroll-dependent, or visibly designed for a different viewport size.
 - The contact sheet reads as a sequence of similar panels.
 - The strongest visual page is only the cover.
 - Most slides look like report pages with decorative accents.

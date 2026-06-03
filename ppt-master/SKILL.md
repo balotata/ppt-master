@@ -62,6 +62,7 @@ If multiple modes apply, choose the highest-risk mode as primary and carry the o
 - Brand assets must be real, user-provided, or verified. Do not fabricate logos, mascots, product UI, partner badges, or app icons.
 - If output is PPTX, preserve editability wherever practical: native text, shapes, tables, chart-like constructs, and editable diagrams over flattened screenshots.
 - If output is HTML, keep core text and data in DOM, preserve 16:9 slide structure, support keyboard navigation, and avoid unintended network dependency.
+- HTML decks must auto-fit the visible browser viewport. A fixed-size slide that requires scrolling or crops content is a blocking failure.
 - Avoid AI-flavored neutrality. The deck should have a point of view, tension, and human phrasing.
 
 ## Delivery Rules

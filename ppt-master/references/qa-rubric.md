@@ -9,8 +9,10 @@ Confirm:
 - Output file exists and is non-empty.
 - Slide count matches the request.
 - Required assets exist.
+- HTML/web decks scale to the current viewport; the full 16:9 slide is visible without page scrolling.
 - Text is readable.
 - No obvious overlap, clipping, broken images, or missing values.
+- No content is cut off by fixed slide dimensions, viewport mismatch, or navigation controls.
 - No low-contrast dark-on-dark text, invisible tables, faded proof objects, or unreadable source pages.
 - Sources exist for factual claims.
 - Final format matches the user's need.
@@ -37,6 +39,7 @@ Reject or revise when:
 Reject or revise when:
 
 - Contact sheet looks like a template pack.
+- Web deck uses fixed-size pages or scroll stacks instead of a viewport-fitted 16:9 stage.
 - Web deck ignores mature open-source layout lessons: no stable canvas, weak navigation, repeated layouts, missing asset checks, or no presenter rhythm.
 - Web deck lacks a dominant visual/proof object and relies on decorative grids, rings, ghost words, or generic panels.
 - Contact sheet is missing, incomplete, or only shows one representative slide for a multi-slide deck.
