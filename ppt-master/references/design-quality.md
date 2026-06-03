@@ -17,6 +17,8 @@ Define before production:
 - Page markers, section markers, source notes, and speaker-note treatment.
 - Banned motifs.
 
+Default priority is visual impact and keynote-like presence, adjusted to the theme. Do not impose one fixed house style; derive the visual language from topic, audience, and requested tone.
+
 ## Contact Sheet Standard
 
 At thumbnail size, the deck should show authorship:
@@ -64,6 +66,16 @@ Avoid:
 - Purple/blue gradients, beige slabs, dark slate dashboards, or espresso/brown palettes unless deliberately justified.
 - Stock-looking imagery when the subject needs inspection.
 - Low-resolution logos or rough crops.
+
+## High-Aesthetic Rewrite
+
+When upgrading an existing PPT:
+
+- Preserve the user's intended message unless asked to rewrite strategy.
+- Raise the visual ceiling: stronger hierarchy, more authored layout rhythm, better crops, cleaner proof objects, and less filler.
+- Prefer fewer, stronger visual elements over many polite boxes.
+- If the original deck is visually weak, do not merely "beautify" the same structure; rebuild weak slides around their actual claim.
+- Make the result feel intentional at thumbnail size before polishing details.
 
 ## Structured Visuals
 

@@ -14,7 +14,7 @@ Use this file before production when the request could map to more than one pres
 
 ## Calibration Questions
 
-Ask only what changes the result. For most requests, ask at most 3-5:
+Ask 3-5 questions before substantial work unless the user has already answered them or explicitly asks for immediate production. Ask only what changes the result:
 
 - Audience: who is judging this deck, and what do they already believe?
 - Objective: what decision, feeling, or understanding must change?
@@ -37,7 +37,18 @@ Treat these as high-risk and slow down for source/QA:
 
 ## Output Defaults
 
-- Default business output: editable PPTX.
+- Default language: Chinese.
+- Default voice: sharp, spoken, low-AI, mildly opinionated.
+- Default output: HTML/web keynote deck.
+- Default business output: still HTML web deck unless the user explicitly asks for editable PPTX, PowerPoint compatibility, template fidelity, or internal corporate reuse.
 - Default creative/keynote web output: single-file HTML with local assets.
 - Default review output: findings list plus prioritized repair plan.
-- Default ambiguous "make a PPT" output: ask whether PPTX or web deck unless local context clearly implies one.
+- Default ambiguous "make a PPT" output: HTML web deck; mention the assumption briefly during calibration.
+
+## Priority Use Cases
+
+Prioritize these workflows when optimizing behavior:
+
+- Specific topic -> new deck.
+- Existing material such as proposal, paper, report, article, transcript, or notes -> vivid visual presentation.
+- Existing PPT -> high-aesthetic rewrite or redesign.

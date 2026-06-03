@@ -17,6 +17,9 @@
 outputs/
 .codex/
 .agents/
+/node_modules/
+/package.json
+/package-lock.json
 
 # OS/editor files
 .DS_Store

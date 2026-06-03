@@ -4,7 +4,7 @@ Use this file when a deck relies on facts, current information, data, sources, i
 
 ## Research Triggers
 
-Browse or otherwise verify before using:
+Browse or otherwise verify before using. This is the default behavior for source-sensitive presentation work:
 
 - Latest/current claims.
 - Public companies, financials, market data, rankings, pricing, releases, leadership, laws, policies, or schedules.
@@ -41,6 +41,26 @@ Use generated images for:
 - Conceptual scenes.
 - Original illustration.
 - Non-brand visual metaphors.
+
+When the deck aims for keynote-like impact, use images more aggressively, but keep text, claims, numbers, labels, and citations outside the image.
+
+## Per-Slide Imagegen Workflow
+
+Use this when the user wants a visual/keynote-style deck, asks for rich imagery, or the story benefits from every slide having its own art.
+
+1. Define one art direction for the whole deck: medium, lighting, palette, composition language, texture, level of realism, and banned elements.
+2. In the outline, mark each slide as:
+   - `none`: no generated image needed.
+   - `hero`: one major opening/section/closing image.
+   - `per-slide`: generate a custom image for this slide.
+   - `real-source`: use verified real imagery instead of imagegen.
+3. Write slide-specific prompts that share the same art direction but vary the subject, camera, metaphor, and emotional beat.
+4. Avoid text, logos, UI, watermarks, charts, brand marks, and fake screenshots in generated images.
+5. Save generated assets with stable names such as `slide-01.png`, `slide-02.png`, or `hero.png` under `assets/<deck-name>/`.
+6. Keep all readable claims, titles, labels, numbers, and sources in editable PPTX text/shapes or HTML DOM.
+7. Verify every referenced image exists, loads, is not blank, and matches the slide's role.
+
+For fast iteration, batch the image plan first, then generate images slide by slide. If an image fails the art direction, regenerate or replace with a simpler visual rather than designing around a weak image.
 
 Use real or verified images for:
 

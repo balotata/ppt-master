@@ -13,6 +13,9 @@ Confirm:
 - No obvious overlap, clipping, broken images, or missing values.
 - Sources exist for factual claims.
 - Final format matches the user's need.
+- For default ambiguous requests, final format is HTML/web deck unless the user explicitly chose PPTX.
+
+Default final response should include only the final artifact and concise QA summary unless the user asks for the outline, source ledger, scorecard, or work log.
 
 ## Narrative Gate
 
@@ -24,12 +27,14 @@ Reject or revise when:
 - The same generic slide could be used after swapping the noun.
 - Body copy fills space instead of advancing the argument.
 - The ending repeats the opening without adding consequence or action.
+- Chinese copy feels generic, bureaucratic, or AI-neutral when a sharper spoken voice would fit.
 
 ## Visual Gate
 
 Reject or revise when:
 
 - Contact sheet looks like a template pack.
+- Web deck ignores mature open-source layout lessons: no stable canvas, weak navigation, repeated layouts, missing asset checks, or no presenter rhythm.
 - Three consecutive slides share the same layout.
 - Card grids dominate.
 - Containers are louder than content.
@@ -48,6 +53,7 @@ Reject or revise when:
 - Current claims were not verified.
 - Brand assets are fabricated or unprovenanced.
 - Generated images carry readable text, logos, or pseudo-official marks.
+- Per-slide image sets lack a consistent art direction or fail to match the slide claims.
 
 ## Scorecard
 

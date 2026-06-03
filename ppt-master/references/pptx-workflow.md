@@ -6,6 +6,8 @@ Use this file when the output is an editable PowerPoint deck or when editing an 
 
 PPTX deliverables must be editable, rendered, and QA-checked. A flattened image deck is not acceptable unless the user explicitly wants image slides.
 
+If editability conflicts with a major visual improvement, prefer visual quality by default, but keep titles, claims, labels, and key numbers editable whenever practical. Switch to full editability only when the user asks for business/template maintainability.
+
 ## Capability Handoff
 
 When the Presentations skill/plugin is available, use it for serious PPTX creation, editing, template-following, rendering, and export. Follow its artifact-tool presentation JSX workflow instead of inventing a separate PPTX pipeline.
@@ -36,7 +38,8 @@ For template-following, the source slide skeleton is canonical. Do not rebuild f
 ## Editable Build Rules
 
 - Prefer native text, shapes, lines, tables, and editable chart-like constructs.
-- Use generated raster images for atmosphere, hero art, or non-editable illustration only when appropriate.
+- Use generated raster images for atmosphere, hero art, visual storytelling, or non-editable illustration when they materially improve the deck.
+- For visual/keynote-style PPTX, it is acceptable to use one generated image per slide as a background or dominant visual, while keeping claims, labels, and numbers editable above it.
 - Keep chart labels, titles, values, and footnotes editable whenever practical.
 - Do not fabricate brand marks or pseudo-official UI to fill space.
 - Keep final filenames specific, not `output.pptx` or `deck.final.pptx`.

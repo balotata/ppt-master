@@ -6,8 +6,8 @@ It is designed as a presentation director rather than a simple slide generator: 
 
 ## What It Helps With
 
-- Create editable PPTX decks from a topic, report, source pack, or rough outline.
-- Create web-native HTML/keynote decks for browser-first or Remotion-ready delivery.
+- Create web-native HTML/keynote decks for browser-first, image-rich, or Remotion-ready delivery.
+- Create editable PPTX decks from a topic, report, source pack, or rough outline when PowerPoint output is explicitly needed.
 - Rewrite weak decks into sharper executive, investor, product, strategy, or technical narratives.
 - Follow a supplied template or existing deck style.
 - Make targeted edits to existing presentations.
@@ -26,6 +26,7 @@ ppt-master/
     design-quality.md
     pptx-workflow.md
     web-deck-spec.md
+    web-layout-inspiration.md
     research-and-assets.md
     qa-rubric.md
 
@@ -64,7 +65,7 @@ Restart or open a new Codex thread after installing.
 ## Example Prompts
 
 ```text
-Use ppt-master to create a 12-slide editable PPTX.
+Use ppt-master to create a 12-slide HTML keynote deck.
 Topic: How AI agents change enterprise software.
 Audience: CIOs and product leaders.
 Tone: executive, sharp, research-backed, bilingual Chinese/English.
@@ -101,3 +102,4 @@ The skill is meant to reject generic slide output. A finished deck should have:
 - Real or verified brand assets.
 - Editable PPTX output when PPTX is requested.
 - DOM-based text/data and keyboard navigation when HTML is requested.
+- GitHub/open-source web presentation lessons applied when making substantial web decks.

@@ -14,7 +14,7 @@ Default:
     slide-01.png
 ```
 
-Use a single HTML file with inline CSS/JS unless the user asks for React or a framework.
+Use a single HTML file with inline CSS/JS unless the user asks for React, Slidev, Reveal.js, open-slide, or another framework. For substantial web decks, read `web-layout-inspiration.md` before designing layout rhythm.
 
 ## Slide Structure
 
@@ -71,6 +71,7 @@ If speaker notes exist, provide a simple toggle.
 ## Images
 
 - Store generated or local assets under `assets/<deck-name>/`.
+- For image-rich decks, support one generated image per slide using stable names such as `slide-01.png`.
 - Keep core text, labels, data, and sources in DOM, not inside images.
 - Generated images should avoid readable text, logos, watermarks, and brand marks.
 - For product, place, person, or object-focused decks, use assets that actually reveal the subject.

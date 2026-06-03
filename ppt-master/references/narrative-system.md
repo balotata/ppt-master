@@ -59,6 +59,8 @@ Use these as building blocks, not rigid templates:
 - Use short, exact sentences.
 - Delete filler: "由此可见", "总而言之", "在某种程度上", "赋能", "生态闭环" unless the deck defines them concretely.
 - Avoid generic AI phrasing and consulting wallpaper.
+- Default Chinese should feel sharp, spoken, and human. Prefer a sentence with judgment over a neutral topic summary.
+- Use rhetorical pressure when useful: contrast, reversal, punchline, and concrete consequence.
 - Bind abstract claims to specific behavior, data, tradeoffs, or examples.
 - Bilingual decks should be meaning-matched, not word-for-word translated.
 - Let philosophical tone come from rhythm and precision, not terminology.
@@ -82,5 +84,16 @@ For heavy, long, research-backed, or image-heavy decks, provide a Markdown outli
 - Claim title
 - Core proof object
 - Visual direction
+- Image need: none / hero / per-slide custom image / real source image
 - Speaker note intent
 - Source requirement or uncertainty
+
+## Existing Material Transformation
+
+When turning proposals, papers, reports, or notes into slides:
+
+- Do not summarize in document order by default.
+- Extract the strongest argument, conflict, evidence, and consequence.
+- Convert dense paragraphs into visual proof objects: framework, comparison, timeline, mechanism map, matrix, annotated quote, or data highlight.
+- Preserve exact terms, numbers, citations, and definitions when they matter.
+- Make the slide feel newly authored, not like pasted source text.
