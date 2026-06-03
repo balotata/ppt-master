@@ -1,0 +1,29 @@
+# Generated decks and large sample outputs in the repository root
+/assets/
+/*.html
+/*.pptx
+/*.pdf
+/*.png
+/*.jpg
+/*.jpeg
+/*.webp
+/*.gif
+
+# Skill packaging/build artifacts
+.skill-build/
+*.zip
+
+# Local Codex/runtime scratch
+outputs/
+.codex/
+.agents/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Logs
+*.log
