@@ -41,6 +41,7 @@ Revise when titles are bland, bureaucratic, overlong, generic, or not tied to th
 
 Check:
 
+- For premium or visually ambitious work, a reference stack was chosen and translated into original design rules.
 - Contact sheet has visible rhythm.
 - The strongest visual page is not only the cover.
 - No three consecutive slides share the same macro layout.
@@ -57,6 +58,18 @@ Check:
 - Image crops are intentional, high quality, and not misleading.
 
 Revise when the deck becomes a sequence of repeated dashboards, card grids, decorative panels, generic icons, pale grids, rings, ghost words, or abstract filler.
+
+## Reference Gate
+
+For high-aesthetic, branded, product, artistic, cultural, gaming, or experimental decks, check:
+
+- The deck used 2-4 relevant references or domain artifacts before design.
+- Reference decisions were translated into type, image, color, composition, density, or motion rules.
+- The result is original and topic-specific, not a copied layout or generic award-site imitation.
+- At least one non-cover slide visibly benefits from the reference teardown.
+- Any real brand/product/person/place asset is verified or user-provided; generated imagery is not used as a fake substitute.
+
+Revise when references are listed but not visible in the design, or when the deck copies surface decoration without improving clarity.
 
 ## Source Gate
 

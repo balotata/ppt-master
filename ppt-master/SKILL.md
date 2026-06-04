@@ -14,7 +14,7 @@ Use these defaults unless the user says otherwise:
 - Default output is an HTML/web keynote deck. If the user only says "做 PPT / 做演示 / 做 deck", choose web keynote unless they explicitly need editable PowerPoint, template fidelity, or internal PPTX reuse.
 - Default language is Chinese.
 - Default voice is sharp, spoken, low-AI, and mildly opinionated.
-- Default creation path is: `topic -> core tension -> narrative arc -> visual direction -> slide rhythm -> evidence/assets -> HTML build -> QA`.
+- Default creation path is: `topic -> core tension -> narrative arc -> visual references -> visual direction -> slide rhythm -> evidence/assets -> HTML build -> QA`.
 - Prioritize visual impact, narrative sharpness, keynote presence, and credible research. Do not let QA language, source handling, or PPTX concerns flatten the deck into a report.
 - For substantial web decks, start from art direction and macro contact sheet before writing CSS.
 - Use imagegen when original imagery raises the deck's visual stakes. Generate per-slide art for image-rich keynote decks; use fewer images for analytical decks.
@@ -27,7 +27,7 @@ Use these defaults unless the user says otherwise:
 
 1. Calibrate only decisions that change the result: audience, objective, output format, language, research depth, source fidelity, visual direction, deadline, and editability. Ask 3-5 questions before substantial work when these are missing; if enough context exists, proceed and state assumptions briefly.
 2. Route the task only when the user's intent is ambiguous. Read `references/task-router.md` for PPTX, template-following, targeted edit, review, speaker-support, or source-material transformations.
-3. For web keynote creation, read `references/web-aesthetic-playbook.md` first, then `references/narrative-system.md`, then `references/web-deck-spec.md`. This order matters: visual authorship leads, mechanical validation follows.
+3. For web keynote creation, read `references/web-aesthetic-playbook.md` first, then `references/narrative-system.md`, then `references/web-deck-spec.md`. For high-aesthetic, branded, product, artistic, cultural, gaming, or visually experimental decks, also read `references/visual-reference-system.md` before writing CSS. This order matters: visual authorship leads, references sharpen taste, mechanical validation follows.
 4. For research-backed or source-sensitive work, read `references/research-and-assets.md` and record source URLs, dates, units, and uncertainty.
 5. For editable PowerPoint work, read `references/pptx-workflow.md`. Use PPTX when the user explicitly asks for PowerPoint, editability, template fidelity, board/investor reuse, or existing deck editing.
 6. Before final delivery for substantial work, read `references/qa-rubric.md`. Treat it as a final gate, not as the creative brief.
@@ -42,6 +42,7 @@ For default web decks:
 - The contact sheet should show movement: cover, tension, mechanism, evidence, contrast, synthesis, closing. No three consecutive slides should share the same macro composition.
 - Copy should sound like a person speaking on stage: short, exact, rhythmic, and specific.
 - Chinese typography must match the subject. Choose the type personality before CSS.
+- For visually ambitious work, choose 2-4 external or domain-specific references and translate them into original rules for type, image, color, composition, and density. Do not copy the reference surface.
 - Keep browser behavior presentation-like: one 16:9 slide fits the viewport, keyboard navigation works, and no page scroll is needed.
 
 ## Branch Modes
@@ -81,6 +82,7 @@ Deliver only what the user needs:
 Load only the files needed for the task:
 
 - `references/web-aesthetic-playbook.md`: primary reference for high-impact HTML/web keynote decks.
+- `references/visual-reference-system.md`: reference intake, teardown, style-transfer rules, and anti-generic visual checks for premium design work.
 - `references/narrative-system.md`: core tension, narrative arc, slide titles, page types, copy, and speaker notes.
 - `references/web-deck-spec.md`: viewport-fit 16:9 HTML structure, navigation, asset handling, and validation.
 - `references/task-router.md`: output format and workflow routing.

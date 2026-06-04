@@ -9,6 +9,7 @@ A web deck should feel like an authored presentation artifact, not a styled repo
 Before layout, define what the audience should see and feel:
 
 - Core tension.
+- Reference stack and what will be transferred.
 - Art direction.
 - Typography personality.
 - Palette and contrast mood.
@@ -16,6 +17,8 @@ Before layout, define what the audience should see and feel:
 - Contact sheet rhythm.
 
 Then build the slides.
+
+For high-aesthetic, branded, product, artistic, cultural, gaming, or experimental work, read `visual-reference-system.md` before writing CSS. Use it to choose references, teardown their decisions, and write 3 original transfer rules.
 
 ## Visual Narrative First
 
@@ -30,6 +33,13 @@ For a new deck, sketch the macro contact sheet before writing CSS:
 - Closing: the thesis returns with consequence, not repetition.
 
 Decks under 8 pages still need rhythm. No more than two consecutive slides may share the same macro composition.
+
+Before locking the contact sheet, test it against the reference stack:
+
+- Which slide borrows a composition principle?
+- Which slide borrows a typography principle?
+- Which slide borrows an image or material principle?
+- Which repeated layout family has been replaced by a more specific stage, artifact, diagram, or crop?
 
 ## Dominant Visual Force
 
@@ -56,6 +66,8 @@ Borrow these principles from strong product keynotes and brand systems before re
 - Prefer edge-to-edge visuals plus safe-area text over floating panels. If a panel is needed, make it quiet, content-sized, and subordinate to the claim.
 - Keep analytical pages alive through proof objects: direct-labeled charts, source strips, spatial diagrams, annotated artifacts, or split comparisons. Avoid "large empty card with paragraph" as the default proof pattern.
 - Let accent color behave like a signal, not wallpaper. Apple-like decks use restraint and air; Xiaomi-like VI shows that curves, breathing motion, and a clear brand color can carry warmth without clutter.
+
+Do not use "Apple-like" or "Xiaomi-like" as a style label. Convert the reference into concrete rules: optical centering, material close-up, disciplined accent, brand-shaped curve, one-line claim, product-sized safe area, or restrained motion.
 
 ## Recovered Strengths
 
