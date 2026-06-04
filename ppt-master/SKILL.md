@@ -14,9 +14,10 @@ Use these defaults unless the user says otherwise:
 - Default output is an HTML/web keynote deck. If the user only says "做 PPT / 做演示 / 做 deck", choose web keynote unless they explicitly need editable PowerPoint, template fidelity, or internal PPTX reuse.
 - Default language is Chinese.
 - Default voice is sharp, spoken, low-AI, and mildly opinionated.
-- Default creation path is: `topic -> core tension -> narrative arc -> visual references -> visual direction -> slide rhythm -> evidence/assets -> HTML build -> QA`.
+- Default creation path is: `topic -> core tension -> narrative arc -> visual references -> type/style exploration -> sample slide -> sample calibration -> full outline/title check -> final build -> QA`.
 - Prioritize visual impact, narrative sharpness, keynote presence, and credible research. Do not let QA language, source handling, or PPTX concerns flatten the deck into a report.
 - For substantial web decks, start from art direction and macro contact sheet before writing CSS.
+- For cultural, museum, religious, historical, luxury, epic, or art-heavy decks, explore fonts and style references before designing the sample. Do not default to generic sans-serif typography.
 - Use imagegen when original imagery raises the deck's visual stakes. Generate per-slide art for image-rich keynote decks; use fewer images for analytical decks.
 - Keep readable claims, labels, numbers, sources, and speaker notes in DOM or editable text, never inside generated images.
 - When editability and visual quality conflict, prefer visual quality and HTML-native expression unless the user explicitly requires fully editable PPTX.
@@ -31,6 +32,28 @@ Use these defaults unless the user says otherwise:
 4. For research-backed or source-sensitive work, read `references/research-and-assets.md` and record source URLs, dates, units, and uncertainty.
 5. For editable PowerPoint work, read `references/pptx-workflow.md`. Use PPTX when the user explicitly asks for PowerPoint, editability, template fidelity, board/investor reuse, or existing deck editing.
 6. Before final delivery for substantial work, read `references/qa-rubric.md`. Treat it as a final gate, not as the creative brief.
+
+## Sample-First Workflow
+
+For substantial create, rewrite-upgrade, template-following, or high-aesthetic web-deck work, use a three-stage workflow unless the user explicitly asks for a one-pass draft:
+
+1. `Sample slide`: Produce 1 representative sample slide first. Choose a slide that tests the hardest design question, not merely the cover: visual direction, typography, density, evidence style, image behavior, and viewport fit.
+2. `Calibrate and check`: Use the sample to align on taste, tone, information density, visual force, and interaction mechanics. After the sample direction is accepted or reasonably stabilized, present the complete outline, claim spine, slide order, page role, image strategy, and every title to the user for alignment before building the final deck.
+3. `Final version`: Only then produce the complete deck, assets, notes, and QA.
+
+Do not spend full production effort on every slide before the sample has tested the core visual and narrative assumptions. Do not build all pages for substantial work until the user has explicitly accepted or corrected the full outline/title check. If the user says "continue" after the sample but the full outline has not been shown, treat that as permission to show the outline next, not permission to produce the full deck. For urgent or very small decks, keep this workflow internal only when the user explicitly requests one-pass production.
+
+## Typeface And Style Intake
+
+Before sample-slide design for art, museum, cultural heritage, religion, architecture, fashion, luxury, gaming, or epic themes:
+
+1. Explore 2-4 typography lanes and 2-4 visual reference lanes before writing CSS.
+2. Prefer locally bundled or downloaded open-license fonts over default system sans when typography carries the mood. Verify license and source before use.
+3. If downloading fonts or style assets is useful, place them under the deck's local `assets/<deck-name>/fonts/` or equivalent folder and reference them with `@font-face`. Ask for network/download permission when required.
+4. Write a one-line type intent before the sample, such as `monumental Roman capitals + Chinese high-contrast serif`, `museum label serif + stone inscription display`, or `liturgical blackletter accent + restrained body serif`.
+5. Decide the image strategy before layout: real subject images, verified online images, user-provided assets, generated atmosphere, symbolic micro-illustrations, or no images.
+6. For real buildings, museums, artworks, people, products, venues, or brand-sensitive subjects, prefer verified real images or clearly symbolic diagrams. Do not use imagegen to fake a real place, object, logo, or artwork.
+7. Reject the sample if the typography could fit a SaaS dashboard, consulting report, or generic business keynote after only changing the topic noun.
 
 ## Web Keynote Standard
 

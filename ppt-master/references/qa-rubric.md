@@ -95,6 +95,23 @@ For substantial web decks, inspect or produce a contact sheet containing every s
 
 If it fails, rebuild the weakest 2-4 slides around stronger image, typography, or proof objects.
 
+## Human Layout Gate
+
+Do not treat automated screenshot metrics as sufficient. Before final delivery, manually inspect the contact sheet and at least the cover, every dense/compare/source page, one image-led page, one text-led page, and the final page.
+
+Reject and revise when:
+
+- A page is mechanically valid but visually weak, empty, over-framed, or obviously template-like.
+- Cards, specimens, panels, or columns are repeated without a new visual reason.
+- A compare page uses equal boxes where a diagram, scale shift, artifact strip, or direct visual contrast would carry the idea better.
+- The slide order feels wrong: a page introduces a network, comparison, case, or conclusion before the story has earned it.
+- A page title, page role, or content belongs earlier/later in the narrative.
+- A real-image page uses a generic crop that does not reveal the subject's distinctive form.
+- A symbolic illustration competes with text instead of clarifying the subject.
+- The final page is only a source list or a weak summary instead of a closing consequence.
+
+For serious work, produce a short self-audit before final: weakest slide, why it is acceptable now, and what was revised after visual inspection.
+
 ## Screenshot Gate
 
 For HTML/web decks, visual screenshot QA is required before calling the deck fully verified.
@@ -121,6 +138,7 @@ Reject or revise when screenshots show:
 - Source text sitting outside the safe area.
 - Controls hiding content.
 - A slide that looks acceptable in file-level checks but fails visually.
+- Any slide the user would reasonably call "empty", "stiff", "generic", "too card-like", or "layout-broken" after seeing the screenshot.
 
 If Browser or screenshot tooling is blocked by policy, do not present the deck as fully visually QA'd. State that file-level checks passed and screenshot QA is blocked.
 

@@ -196,6 +196,42 @@ Result:
 - Requires checks at 1920x1080, 1366x768, and 1440x900.
 - QA rejects clipped content, scroll-dependent slides, viewport mismatch, and controls covering content.
 
+### 10. Sample-First Workflow, Outline Alignment, And Human Layout QA
+
+Date: 2026-06-05
+
+Reason:
+
+Live deck practice exposed three regressions:
+
+- The agent treated "continue" after a sample as permission to build the full deck, instead of first aligning the complete outline and page order with the user.
+- A Guggenheim deck placed the global network page after the New York page, creating a narrative-order error.
+- Automated screenshot QA passed a mechanically valid but visually weak compare page, proving that script metrics alone are not enough.
+
+Result:
+
+- `SKILL.md` now makes the sample-first workflow a hard gate:
+  - Build 1 representative sample slide first.
+  - After sample calibration, present the complete outline, claim spine, slide order, page role, image strategy, and every title to the user.
+  - Do not build all pages for substantial work until the user explicitly approves or corrects that outline.
+  - If the user says "continue" after the sample but no full outline has been shown, treat it as permission to show the outline next, not permission to produce the full deck.
+- `narrative-system.md` now requires the outline checkpoint to be user-facing for heavy, long, research-backed, or image-heavy decks.
+- `qa-rubric.md` now includes a `Human Layout Gate`:
+  - Manual contact-sheet review is required.
+  - Mechanically valid but empty, stiff, generic, over-framed, or layout-broken slides must be revised.
+  - Compare/source/final pages receive special scrutiny.
+  - Final slides must close with consequence, not collapse into source lists.
+- `web-aesthetic-playbook.md` now requires type/style/image strategy exploration for museum, cultural, religious, historical, luxury, or epic themes before sample design.
+- The Guggenheim practice deck was corrected:
+  - The global atlas page moved before the New York single-museum page.
+  - The weak four-box comparison page was rebuilt as an architectural specimen table.
+
+Behavioral change:
+
+For substantial deck creation, the correct sequence is now:
+
+`sample -> user calibration -> full outline/title/page-order alignment -> user approval -> full production -> automated QA -> human contact-sheet/layout QA -> final delivery`.
+
 ## Current Expected Behavior
 
 For a typical request like "用 ppt-master 做一个 12 页关于 X 的演示":

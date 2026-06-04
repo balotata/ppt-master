@@ -119,7 +119,7 @@ Before building, rewrite slide titles until they pass the read-alone test: if th
 
 ## Outline Checkpoint
 
-For heavy, long, research-backed, or image-heavy decks, provide or internally lock a Markdown outline before building unless the user asked for immediate production. Include per slide:
+For heavy, long, research-backed, or image-heavy decks, provide a Markdown outline to the user after the sample slide has calibrated the visual direction and before building the final deck. Do not merely lock it internally unless the user explicitly requested one-pass production. Include per slide:
 
 - Page type.
 - Claim title.
@@ -128,6 +128,16 @@ For heavy, long, research-backed, or image-heavy decks, provide or internally lo
 - Image/visual need: none / hero / per-slide custom image / real-source image / proof-object / typographic poster.
 - Speaker note intent.
 - Source requirement or uncertainty.
+
+At this checkpoint, check the whole deck instead of only the sample:
+
+- Does the claim spine move from tension to mechanism to consequence or decision?
+- Does every title pass the read-alone test?
+- Are repeated page types intentional rather than accidental?
+- Does each slide have a visual role that matches the sample's calibrated design system?
+- Are source-heavy, data-heavy, or brand-sensitive slides flagged before production?
+
+Ask the user to accept or correct the outline. Do not proceed to full production until the user has explicitly approved the outline or provided corrections that can be incorporated.
 
 For fast creative requests, proceed directly but still keep the same mental structure.
 

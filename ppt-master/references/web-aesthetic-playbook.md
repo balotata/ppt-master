@@ -16,13 +16,22 @@ Before layout, define what the audience should see and feel:
 - Image strategy.
 - Contact sheet rhythm.
 
-Then build the slides.
+Then build one representative sample slide before scaling the system to the full deck.
 
 For high-aesthetic, branded, product, artistic, cultural, gaming, or experimental work, read `visual-reference-system.md` before writing CSS. Use it to choose references, teardown their decisions, and write 3 original transfer rules.
 
+For museum, cultural heritage, religious, historical, luxury, or epic themes, typography is part of the artifact. Before the sample slide:
+
+- Explore at least 2 display-font lanes and 1 readable body-font lane.
+- Prefer serif, inscriptional, calligraphic, blackletter, high-contrast, or archival typography when the subject calls for cultural weight.
+- Download and bundle open-license fonts when local/system fonts cannot carry the intended mood.
+- Avoid generic product sans, dashboard UI fonts, and evenly rounded geometric sans as the default.
+- Define a type intent and make the sample prove it.
+- Define an image strategy before layout: use verified real images for real buildings/artworks/places; use imagegen only for atmosphere, texture, or metaphor; use symbolic micro-illustrations when a compact comparison needs recognizability without pretending to be a photograph.
+
 ## Visual Narrative First
 
-For a new deck, sketch the macro contact sheet before writing CSS:
+For a new deck, sketch the macro contact sheet before writing production CSS:
 
 - Cover / thesis: one high-stakes visual or typographic statement.
 - Tension: the conflict becomes visible.
@@ -33,6 +42,13 @@ For a new deck, sketch the macro contact sheet before writing CSS:
 - Closing: the thesis returns with consequence, not repetition.
 
 Decks under 8 pages still need rhythm. No more than two consecutive slides may share the same macro composition.
+
+Before building all slides, create one sample slide that stress-tests the deck's hardest choices:
+
+- If the deck is visual/keynote-led, the sample should prove image behavior, typography, color, and dominant visual force.
+- If the deck is analytical, the sample should prove density, chart/proof-object treatment, source handling, and readability.
+- If the deck follows a template or brand, the sample should prove fidelity and adaptation before full production.
+- If the sample fails the intended taste, rebuild the art direction or transfer rules before expanding the deck.
 
 Before locking the contact sheet, test it against the reference stack:
 
@@ -98,6 +114,7 @@ Define one art direction for the whole deck:
 For Chinese decks, pick the typography personality before CSS:
 
 - Editorial/research/cultural: serif-led.
+- Museum/cultural heritage/religion/epic: serif-led, inscriptional, calligraphic, or monumental display with restrained label typography.
 - Technology/AI/product/systems: modern geometric sans.
 - Luxury/art/philosophy: elegant high-contrast serif or display direction.
 - Gaming/dark/cyber: strong display direction with robust fallbacks.
