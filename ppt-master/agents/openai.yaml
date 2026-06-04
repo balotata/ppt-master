@@ -1,3 +1,3 @@
 display_name: PPT Master
-short_description: SOTA presentation creation, editing, and review
-default_prompt: Use ppt-master to create, edit, or review a SOTA-level presentation deck.
+short_description: High-aesthetic web keynote and presentation director
+default_prompt: Use ppt-master to create a visually authored HTML/web keynote deck.

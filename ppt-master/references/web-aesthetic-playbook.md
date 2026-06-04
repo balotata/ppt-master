@@ -1,94 +1,172 @@
 # Web Aesthetic Playbook
 
-Use this file before building or rewriting substantial HTML/web keynote decks. It captures the visual strengths that made earlier ppt-master web decks work better: strong art direction, slide-by-slide visual stakes, bold typography, and authored composition.
+Use this file first when building or rewriting substantial HTML/web keynote decks. It is the creative brief for web output. Mechanical fit and QA come later.
 
-## Non-Negotiable Direction
+## Prime Directive
 
-A web deck should feel like a designed presentation artifact, not a styled report page or framework demo.
+A web deck should feel like an authored presentation artifact, not a styled report page, dashboard, framework demo, or document poured into slides.
 
-It must also behave like a presentation: one full slide fits the screen. If the viewer has to scroll to see the bottom of a slide, the deck fails before aesthetics are considered.
+Before layout, define what the audience should see and feel:
 
-Most slides need one of:
+- Core tension.
+- Art direction.
+- Typography personality.
+- Palette and contrast mood.
+- Image strategy.
+- Contact sheet rhythm.
 
-- A full-bleed or dominant generated/real image.
-- A strong proof object: chart, timeline, loop, matrix, system map, comparison, or source table that visibly carries the claim.
-- A deliberate typographic poster composition with very little supporting clutter.
+Then build the slides.
 
-If a slide has none of these, redesign it before polishing.
+## Visual Narrative First
+
+For a new deck, sketch the macro contact sheet before writing CSS:
+
+- Cover / thesis: one high-stakes visual or typographic statement.
+- Tension: the conflict becomes visible.
+- Mechanism: the hidden system is drawn, staged, or diagrammed.
+- Evidence: a chart, source excerpt, comparison, or real artifact earns trust.
+- Turn: the audience sees what changes.
+- Principle / decision: the deck becomes useful.
+- Closing: the thesis returns with consequence, not repetition.
+
+Decks under 8 pages still need rhythm. No more than two consecutive slides may share the same macro composition.
+
+## Dominant Visual Force
+
+Most slides need one dominant force taking 55-100% of visual weight:
+
+- Full-bleed generated or real image.
+- Large typographic poster.
+- Product, place, person, or object image that reveals the subject.
+- Chart, timeline, loop, matrix, system map, or comparison that visibly carries the claim.
+- Quote or punchline page with precise type and restraint.
+- Editorial image plus a strong thesis rail.
+
+If a slide has no dominant force, redesign it before polishing.
+
+## Keynote VI Principles
+
+Borrow these principles from strong product keynotes and brand systems before reaching for cards:
+
+- Treat the slide as a stage, not a report surface. Primary content usually wants optical vertical centering, not automatic top alignment.
+- Let full-bleed color, image, shape, or material carry grouping. Use visible frames only when the frame encodes a real proof object.
+- Build hierarchy through scale, position, contrast, and motion of attention. Do not make every text block large; a compact block can be more premium than an empty giant box.
+- Choose type as art direction. Chinese titles may use a subject-specific serif, display, calligraphic, geometric, condensed, or blunt sans direction, with robust fallbacks. System sans is acceptable only when it is a deliberate product/technical voice.
+- Use one memorable shape language per deck: product silhouette, superellipse, archive sheet, lens crop, map fold, waveform, mask, stage beam, etc. Repeat it with variation so the deck feels authored.
+- Prefer edge-to-edge visuals plus safe-area text over floating panels. If a panel is needed, make it quiet, content-sized, and subordinate to the claim.
+- Keep analytical pages alive through proof objects: direct-labeled charts, source strips, spatial diagrams, annotated artifacts, or split comparisons. Avoid "large empty card with paragraph" as the default proof pattern.
+- Let accent color behave like a signal, not wallpaper. Apple-like decks use restraint and air; Xiaomi-like VI shows that curves, breathing motion, and a clear brand color can carry warmth without clutter.
 
 ## Recovered Strengths
 
-Earlier high-impact decks worked because they used:
+The strongest early ppt-master decks worked because they used:
 
-- Full-bleed art or product imagery as the emotional stage.
+- Full-bleed art or real imagery as the emotional stage.
 - Strong gradient veils over images so text stayed readable while the image still mattered.
-- Big claim typography: cover and thesis slides used truly large type, not polite report headings.
-- Theme-matched Chinese typography: the font direction felt chosen, not whatever the browser happened to use.
-- Alternating page moods: dark image slide, light statement slide, high-accent data slide, quote slide, mechanism slide, source/closing slide.
-- Per-slide semantic roles: each page had a scene such as `cover`, `core-tension`, `mechanism`, `loop-diagram`, `quote`, `risk-boundary`, or `closing`.
-- A single dominant accent, not many pastel chips.
-- Compact panels only when they encoded evidence; panels did not become the deck's default skeleton.
-- Human, pointed copy that could be spoken aloud.
+- Huge thesis typography for cover, chapter, and closing moments.
+- Theme-matched Chinese typography, not arbitrary system defaults.
+- Alternating moods: dark image slide, light statement slide, high-accent data slide, quote slide, mechanism slide, source/closing slide.
+- Per-slide scene roles such as `cover`, `core-tension`, `mechanism`, `loop-diagram`, `quote`, `risk-boundary`, or `closing`.
+- Compact evidence panels only when they encoded proof.
+- Human, pointed Chinese copy that could be spoken aloud.
 
-## Visual Defaults
+Restore these strengths before adding more rules.
 
-For visual/keynote decks:
+## Art Direction
 
-- Start with art direction, then layout. Decide what the audience should see before deciding where boxes go.
-- Prefer one image or proof object taking 55-100% of the slide's visual weight.
-- Pair every dominant visual with a strong thesis line. If the title is bland, the image becomes decoration.
-- Use text overlays, side rails, or bottom thesis bands rather than centered report blocks.
-- Keep page chrome quiet: small page marker, optional type label, restrained controls.
-- Use strong contrast: if a table, source list, or matrix is unreadable at a glance, it fails.
-- Let Chinese typography carry mood. A cultural deck, science deck, roast deck, and incident briefing should not share the same default font stack.
-- Let sections change rhythm. Do not make 12 slides all share the same header + panel grid.
+Define one art direction for the whole deck:
+
+- Medium: photography, editorial collage, 3D render, ink/serif editorial, cinematic still, product macro, abstract material, data-native geometry.
+- Lighting: high-key, low-key, backlit, gallery-lit, stage-lit, documentary, neon, daylight.
+- Palette: base, text, muted text, line, one dominant accent, optional secondary contrast.
+- Texture: polished glass, paper grain, metal, mist, pixel, clinical white, archival, concrete, screen glow.
+- Composition language: full-bleed, split rail, poster type, diagram stage, close crop, negative space, layered evidence.
+- Banned elements: text inside generated images, logos, fake UI, watermarks, decorative filler.
+
+For Chinese decks, pick the typography personality before CSS:
+
+- Editorial/research/cultural: serif-led.
+- Technology/AI/product/systems: modern geometric sans.
+- Luxury/art/philosophy: elegant high-contrast serif or display direction.
+- Gaming/dark/cyber: strong display direction with robust fallbacks.
+- Internet critique/roast: heavy sans, blunt type, fewer words.
+- Government/safety/incident: sober, authoritative type.
+
+For topic-matched typography, write down a one-line font intent before coding, for example:
+
+- "archival serif with ritual display accents"
+- "condensed launch keynote sans with one oversized number"
+- "gallery wall serif plus tiny museum labels"
+- "industrial grotesk with data-native monospaced labels"
+
+Then make the CSS reflect that intent.
+
+## Imagegen Usage
+
+For high-impact web decks, plan imagegen deliberately:
+
+- Use per-slide images when the deck should feel cinematic, editorial, or visually immersive.
+- Use hero/chapter/closing images when the deck is more analytical.
+- Avoid generating official-looking logos, product UI, screenshots, customer badges, or brand marks.
+- Keep all readable text, data, labels, and sources in DOM.
+- Save assets with stable names such as `slide-01.png`.
+- If generated art is weak, regenerate or replace it with a stronger typographic/proof-object slide.
+
+Use verified real assets instead of generated images for real products, people, places, venues, screenshots, logos, and brand-sensitive identity.
+
+## Layout Families
+
+Mix layout families based on the story:
+
+- Full-bleed thesis image with text veil.
+- Huge typography on quiet field.
+- Split visual comparison.
+- Side rail argument over image.
+- Mechanism diagram on a staged canvas.
+- Loop diagram.
+- Timeline with consequence labels.
+- Data highlight with one dominant number.
+- Chart proof with direct labels.
+- Editorial quote.
+- Product/system map.
+- Risk boundary.
+- Source/closing page that remains readable and intentional.
+
+Premium layout defaults:
+
+- Center the main text mass optically when the slide is a thesis, quote, synthesis, or closing.
+- Use asymmetric splits where image/diagram occupies at least half the slide and copy is compact.
+- Replace repeated cards with inline labels, rails, ticks, callouts, captions, or direct annotations whenever possible.
+- Leave negative space around the main force, not inside empty frames.
+- Use fewer, stronger text blocks: 1 headline, 1 short lead, 2-4 compact proof labels.
+
+Avoid using card grids as the default skeleton.
 
 ## Banned Substitutes
 
 These cannot be the main visual idea:
 
 - Pale background grid.
-- Decorative rings, orbs, or radar circles.
+- Decorative rings or radar circles.
 - Oversized translucent background words.
 - Repeated card dashboards.
 - Generic abstract waves or lines.
 - Icons used only to decorate.
 - Low-contrast matrix/table pages.
+- Containers louder than the claim.
 
-They may appear only as minor texture when a stronger visual/proof object already exists.
-
-## Imagegen Usage
-
-For high-impact HTML decks, default to imagegen-assisted visual planning unless the user asks for a data-only deck:
-
-- Plan the full-deck art direction first.
-- Mark each slide's image role: `full-bleed`, `side-visual`, `background-texture`, `none`, or `real-source`.
-- Generate per-slide images when they create distinct visual beats.
-- Keep generated images textless and brandless.
-- Place all readable claims, labels, numbers, and sources in DOM.
-
-## Layout Rhythm Checklist
-
-Before building, sketch a macro contact sheet plan:
-
-- 1 cover/thesis slide with high visual drama.
-- 2-4 image-led argument slides.
-- 2-4 proof-object slides with charts, diagrams, timelines, or matrices.
-- 1 quote or punchline slide when the voice benefits from it.
-- 1 synthesis/decision slide.
-- 1 source/closing slide that remains readable and visually intentional.
-
-For decks under 8 pages, still vary rhythm: no more than two consecutive slides may share the same macro composition.
+They may appear only as minor texture when a stronger visual or proof object already exists.
 
 ## Contact Sheet Gate
 
 After building, inspect a contact sheet containing every slide. The deck fails if:
 
-- Any slide is clipped, scroll-dependent, or visibly designed for a different viewport size.
-- The contact sheet reads as a sequence of similar panels.
 - The strongest visual page is only the cover.
 - Most slides look like report pages with decorative accents.
+- Three consecutive slides share the same layout.
+- The sequence reads as cards, panels, cards, panels.
+- Any slide is clipped, scroll-dependent, or visibly designed for a different viewport size.
 - Dark pages hide tables or sources.
 - Slides could be swapped between topics without visual changes.
 
-If the contact sheet fails, rebuild the weakest 2-4 slides around stronger image/proof objects.
+If the contact sheet fails, rebuild the weakest 2-4 slides around stronger image, typography, or proof objects.

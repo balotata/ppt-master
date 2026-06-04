@@ -1,6 +1,6 @@
 # QA Rubric
 
-Use this file before final delivery or when reviewing a deck.
+Use this file before final delivery or when reviewing a deck. QA is the final gate. It should protect quality without turning creative web decks into cautious report pages.
 
 ## Mechanical Gate
 
@@ -10,60 +10,114 @@ Confirm:
 - Slide count matches the request.
 - Required assets exist.
 - HTML/web decks scale to the current viewport; the full 16:9 slide is visible without page scrolling.
+- Body scrolling is disabled in presentation mode.
+- Keyboard navigation works.
 - Text is readable.
-- No obvious overlap, clipping, broken images, or missing values.
-- No content is cut off by fixed slide dimensions, viewport mismatch, or navigation controls.
+- No obvious overlap, clipping, broken images, missing values, or controls covering content.
 - No low-contrast dark-on-dark text, invisible tables, faded proof objects, or unreadable source pages.
 - Sources exist for factual claims.
 - Final format matches the user's need.
-- For default ambiguous requests, final format is HTML/web deck unless the user explicitly chose PPTX.
+- Ambiguous "make a PPT/deck" requests default to HTML/web keynote unless the user explicitly chose PPTX.
 
-Default final response should include only the final artifact and concise QA summary unless the user asks for the outline, source ledger, scorecard, or work log.
+Default final response should include only the final artifact and concise QA summary unless the user asks for an outline, source ledger, scorecard, or work log.
 
 ## Narrative Gate
 
-Reject or revise when:
+Check:
 
-- Titles are topics rather than claims.
-- Claim titles are accurate but bland: generic, bureaucratic, overlong, or not memorable.
-- Slides do not support the thesis.
-- A proof object does not prove the title.
-- The same generic slide could be used after swapping the noun.
-- Body copy fills space instead of advancing the argument.
-- The ending repeats the opening without adding consequence or action.
-- Chinese copy feels generic, bureaucratic, or AI-neutral when a sharper spoken voice would fit.
-- Point-making text lacks charm: not sharp, concise, elegant, or specific enough to survive as a standalone line.
+- The deck starts from a clear thesis or core tension.
+- Titles state points, not categories.
+- Claim titles are sharp, concise, and specific enough to survive the read-alone test.
+- Each slide supports the thesis.
+- Analytical slides have credible proof objects.
+- Visual keynote slides have a dominant image, typographic composition, quote, scene, contrast, or proof object that makes the point legible.
+- Body copy advances the argument instead of filling space.
+- The ending returns with consequence, action, or synthesis, not mere repetition.
+- Chinese copy feels human, spoken, and low-AI.
+
+Revise when titles are bland, bureaucratic, overlong, generic, or not tied to the topic.
 
 ## Visual Gate
 
-Reject or revise when:
+Check:
 
-- Contact sheet looks like a template pack.
-- Web deck uses fixed-size pages or scroll stacks instead of a viewport-fitted 16:9 stage.
-- Web deck ignores mature open-source layout lessons: no stable canvas, weak navigation, repeated layouts, missing asset checks, or no presenter rhythm.
-- Web deck lacks a dominant visual/proof object and relies on decorative grids, rings, ghost words, or generic panels.
-- Contact sheet is missing, incomplete, or only shows one representative slide for a multi-slide deck.
-- Three consecutive slides share the same layout.
-- Card grids dominate.
-- Containers are louder than content.
-- Typography feels default or inconsistent.
-- Chinese font choice feels arbitrary, theme-mismatched, or like a casual system fallback.
-- Color palette is one-note.
-- Image crops are low quality, stock-like, or misleading.
-- Charts require legends when direct labels would be clearer.
-- Diagrams have floating connectors or decorative arrows.
+- Contact sheet has visible rhythm.
+- The strongest visual page is not only the cover.
+- No three consecutive slides share the same macro layout.
+- Most web slides have a dominant visual force or strong proof object.
+- Full-bleed images, large type, charts, diagrams, and quiet pages alternate deliberately.
+- Typography feels chosen for the subject, especially Chinese typography.
+- Color palette is coherent but not one-note.
+- Containers do not overpower content.
+- The primary text mass is optically placed; keynote, quote, synthesis, and closing pages are not reflexively pinned to the top.
+- Typography has topic-specific intent, not only generic system defaults.
+- Empty frames, big vacant cards, and repeated panel grids have been replaced with images, diagrams, direct annotations, or compact evidence where possible.
+- Text blocks are deliberately sized: large type earns poster force; smaller copy stays compact and close to its visual proof.
+- Tables, charts, and matrices are readable at presentation size.
+- Image crops are intentional, high quality, and not misleading.
+
+Revise when the deck becomes a sequence of repeated dashboards, card grids, decorative panels, generic icons, pale grids, rings, ghost words, or abstract filler.
 
 ## Source Gate
 
-Reject or revise when:
+Check:
 
-- Metrics are unsupported, mixed-unit, stale, or invented.
-- Source labels are vague.
-- Current claims were not verified.
-- Brand assets are fabricated or unprovenanced.
-- Generated images carry readable text, logos, or pseudo-official marks.
-- Per-slide image sets lack a consistent art direction or fail to match the slide claims.
-- Slides marked as no-image lack a strong proof object or typographic poster composition.
+- Metrics are supported, date-labeled, unit-consistent, and not invented.
+- Current claims were verified.
+- Source labels are specific enough to trust.
+- Reported facts and inference are distinguishable.
+- Brand assets are real, user-provided, or verified.
+- Generated images do not include readable text, logos, pseudo-official UI, or brand marks.
+- Per-slide image sets share an art direction and match slide claims.
+
+## Web Contact Sheet Gate
+
+For substantial web decks, inspect or produce a contact sheet containing every slide. It should show:
+
+- A clear opening mood.
+- Movement between image-led, text-led, proof-led, and synthesis pages.
+- No layout monotony.
+- No clipped content.
+- No source or appendix page that looks like an afterthought.
+
+If it fails, rebuild the weakest 2-4 slides around stronger image, typography, or proof objects.
+
+## Screenshot Gate
+
+For HTML/web decks, visual screenshot QA is required before calling the deck fully verified.
+
+Prefer a localhost preview over `file://`:
+
+- Start a local static server for the deck folder.
+- Open `http://127.0.0.1:<port>/...` in Browser Use.
+- Allow `127.0.0.1` / `localhost` in Browser settings. `file://` access is optional and often cannot be allowlisted.
+
+At minimum inspect:
+
+- Cover slide.
+- One middle slide.
+- Final slide.
+- Any dense, risk-boundary, matrix, card, source, or data slide.
+- A contact sheet for multi-slide benchmark or production decks when browser tools are available.
+
+Reject or revise when screenshots show:
+
+- Hero titles overlapping cards, panels, diagrams, sources, page numbers, or controls.
+- Text clipped by fixed containers.
+- Cards or diagrams pushed under large titles.
+- Source text sitting outside the safe area.
+- Controls hiding content.
+- A slide that looks acceptable in file-level checks but fails visually.
+
+If Browser or screenshot tooling is blocked by policy, do not present the deck as fully visually QA'd. State that file-level checks passed and screenshot QA is blocked.
+
+If Browser can inspect the page but screenshots time out, use the bundled fallback script when available:
+
+```bash
+node scripts/web-visual-qa.mjs --file path/to/deck.html --out-dir path/to/qa-screenshots
+```
+
+On Windows, the fallback script uses Edge or Chrome headless with an isolated temporary profile. If Windows blocks the browser process, request scoped elevated permission for that browser launch.
 
 ## Scorecard
 
@@ -71,22 +125,19 @@ For substantial create/rewrite work, score 0-5:
 
 - Story: clear thesis and arc.
 - Specificity: fails noun-swap test.
-- Proof: each claim has credible evidence.
+- Visual authorship: looks designed, not template-filled.
 - Rhythm: contact sheet has varied macro-layouts.
-- Typography: hierarchy is intentional.
+- Proof: factual or analytical claims have credible evidence.
+- Typography: hierarchy and Chinese font direction are intentional.
 - Visual restraint: no filler decoration.
 - Data/source precision: facts are exact and traceable.
 - Coherence: one design system.
-- Format fitness: output is editable or web-native as requested.
-- Reference delta: beats the reference when one is supplied.
+- Format fitness: output is web-native or editable as requested.
 
 Target:
 
 - No dimension below 4 for serious deliverables.
-- Total at least 40/45 without reference.
-- Total at least 44/50 with reference.
-
-If the target is not reached, iterate the weakest 2-4 slides or state the remaining gap honestly.
+- If the target is not reached, iterate the weakest slides or state the remaining gap honestly.
 
 ## Review Output
 

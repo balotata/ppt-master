@@ -1,11 +1,11 @@
 # Task Router
 
-Use this file before production when the request could map to more than one presentation workflow.
+Use this file before production when the request could map to more than one presentation workflow. Do not over-route simple web keynote requests; the default is still a high-aesthetic HTML/web keynote deck.
 
 ## Route By User Intent
 
-- User asks for `PPT`, `PPTX`, `PowerPoint`, editable slides, board deck, investor deck, template, corporate deck, or a file they can revise: choose PPTX.
-- User asks for `网页演示`, `HTML`, `frontend-slides`, `Remotion`, browser deck, interactive deck, or cinematic webpage: choose web deck.
+- User asks for `PPTX`, `PowerPoint`, fully editable slides, template fidelity, corporate reuse, or a file they must revise in PowerPoint: choose PPTX.
+- User asks for `PPT`, `演示`, `deck`, `网页演示`, `HTML`, `frontend-slides`, `Remotion`, browser deck, interactive deck, cinematic webpage, or high-aesthetic presentation without specifying PowerPoint editability: choose web deck.
 - User uploads or references an existing PPTX/template and asks to follow, reuse, or match it: choose `template-following`.
 - User asks for "改这几页", "美化这页", "替换图表", "加一页", or localized changes: choose `targeted-edit`.
 - User gives a report, transcript, article, spreadsheet, research pack, or rough outline and asks for slides: choose `rewrite-upgrade`.
@@ -18,11 +18,11 @@ Ask 3-5 questions before substantial work unless the user has already answered t
 
 - Audience: who is judging this deck, and what do they already believe?
 - Objective: what decision, feeling, or understanding must change?
-- Format: editable PPTX, web deck, PDF-like readout, or outline first?
+- Format: web keynote, editable PPTX, PDF-like readout, or outline first?
 - Source fidelity: should supplied material be preserved, rewritten, or used only as reference?
 - Language: Chinese, English, bilingual, and which language leads?
 - Research depth: quick synthesis, cited report, or source-verified analysis?
-- Visual direction: corporate, editorial, cinematic, technical, luxury, playful, minimal, brutalist, data-dense, or reference-led?
+- Visual direction: editorial, cinematic, technical, luxury, playful, minimal, brutalist, Apple-like, game-like, data-dense, corporate, or reference-led?
 
 If the user gives enough context to make a reasonable choice, proceed and state the assumption briefly.
 
@@ -40,8 +40,8 @@ Treat these as high-risk and slow down for source/QA:
 - Default language: Chinese.
 - Default voice: sharp, spoken, low-AI, mildly opinionated.
 - Default output: HTML/web keynote deck.
-- Default business output: still HTML web deck unless the user explicitly asks for editable PPTX, PowerPoint compatibility, template fidelity, or internal corporate reuse.
-- Default creative/keynote web output: single-file HTML with local assets.
+- Default business output: still HTML web keynote unless the user explicitly asks for editable PPTX, PowerPoint compatibility, template fidelity, or internal corporate reuse.
+- Default creative/keynote output: single-file HTML with local assets.
 - Default review output: findings list plus prioritized repair plan.
 - Default ambiguous "make a PPT" output: HTML web deck; mention the assumption briefly during calibration.
 

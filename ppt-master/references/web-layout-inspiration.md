@@ -38,4 +38,4 @@ When the user asks for "GitHub 最优方案", "参考开源排版", "更像成�
 
 ## Design Rule
 
-Do not let framework defaults determine taste. Even when borrowing mechanics, the deck must still pass ppt-master standards: sharp claim spine, per-slide proof object, strong image direction, readable DOM text, consistent art direction, and contact-sheet rhythm.
+Do not let framework defaults determine taste. Even when borrowing mechanics, the deck must still pass ppt-master standards: sharp claim spine, dominant visual or proof force on most slides, strong image direction, readable DOM text, consistent art direction, and contact-sheet rhythm.
