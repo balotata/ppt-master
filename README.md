@@ -86,6 +86,7 @@ Style: dark editorial, cinematic, with generated key visuals.
 
 ## Development Notes
 
+- Read `PROJECT_LOG.md` first when resuming this project in a new machine or fresh Codex thread.
 - Edit the canonical skill in `ppt-master/`.
 - Run `.\install-ppt-master-skill.ps1` after changes to sync it into your local Codex skills directory.
 - Generated sample decks, large assets, zip packages, and old local build folders are ignored by `.gitignore`.
